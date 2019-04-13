@@ -6,9 +6,9 @@ def compute():
         exit()
     first = int(first.strip().lstrip('0'))
 
-    OpratorList = ['+', '-', '*', '/']
+    opratorlist = ['+', '-', '*', '/']
     operator = input(r'please inpute operator ,one of "+", "-", "*", "/":')
-    if operator not in OpratorList:
+    if operator not in opratorlist:
         print('you can only input one of "+","-","*","/"')
         exit()
 
