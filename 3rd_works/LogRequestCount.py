@@ -12,6 +12,8 @@ l = logs.replace('"', '').split()
 
 requestlist = [l[x].upper() for x in range(1, len(l), 5)]
 
-request = ['POST', 'GET']
+request = ['POST', 'GET', 'DELETE', 'PUT', 'HEAD', 'TRACE', 'OPTIONS']
 for x in request:
-    print(x, requestlist.count(x))
+    output = (x, requestlist.count(x))
+    if output[1] > 0:
+        print(*output)
